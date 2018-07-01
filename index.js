@@ -1,11 +1,13 @@
-const express = require('express')
-const app     = express()
+const express   = require('express')
+const path      = require('path')
+const app       = express()
+const PORT      = process.env.PORT || 5000
 
-const PORT    = process.env.PORT || 5000
+app().use(express.static(path.join(__dirname, 'public')))
 
-app.post('/url_visited', (req, res) => {
-    console.log("Received Request");
-    res.send('Visited URL: ' + req.data.url);
+app.get('/test_endpoint', (req, res) => {
+    console.log("Received Request on /test_endpoint");
+    res.send('Result from GET to /test_endpoint');
 });
 
 app.listen(PORT, () => console.log('Started acwilson96 analytics on port: ' + PORT));
