@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/acwilson96/activity-tracker#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "bluebird": "^3.5.1",
+    "express": "^4.16.3",
+    "express-real-ip": "^1.0.0",
+    "mongoose": "^5.1.7",
+    "nodemailer": "^4.6.7"
   }
 }
