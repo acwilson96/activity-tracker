@@ -11,7 +11,6 @@ const password      = process.env.PASSWORD;
 
 console.log("Logging From:");
 console.log(email);
-console.log(password)
 console.log("To:");
 console.log(logging_email);
 
