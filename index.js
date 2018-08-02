@@ -9,6 +9,10 @@ const logging_email = process.env.LOG_EMAIL;
 const email         = process.env.EMAIL;
 const password      = process.env.PASSWORD;
 
+/*
+    https://acwilson96-activity-tracker.herokuapp.com/click_url?target=NEXT_PAGE&referrer=CURR_PAGE
+*/
+
 console.log("Logging From:");
 console.log(email);
 console.log("To:");
